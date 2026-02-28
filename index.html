@@ -32,7 +32,6 @@
     ::-webkit-scrollbar-track { background:var(--darker); }
     ::-webkit-scrollbar-thumb { background:var(--primary); border-radius:3px; }
 
-    /* NAV */
     nav {
       position: fixed; top:0; width:100%; z-index:999;
       background: rgba(5,5,16,0.85);
@@ -63,7 +62,6 @@
     }
     .nav-cta:hover { transform:translateY(-2px); box-shadow: 0 8px 25px rgba(108,99,255,0.5); }
 
-    /* HERO */
     #hero {
       min-height:100vh;
       display:flex; align-items:center; justify-content:center;
@@ -137,7 +135,6 @@
     .stat-num { font-size:1.8rem; font-weight:800; color:var(--primary); }
     .stat-label { font-size:.75rem; color:var(--muted); margin-top:.2rem; letter-spacing:.5px; }
 
-    /* SECTIONS */
     section { padding: 90px 5%; }
     .section-label {
       text-align:center; font-size:.8rem; font-weight:700;
@@ -152,7 +149,6 @@
     .section-sub { text-align:center; color:var(--muted); font-size:.95rem; max-width:560px; margin:0 auto 3.5rem; }
     .divider { width:60px; height:3px; background:linear-gradient(90deg,var(--primary),var(--accent)); margin:1rem auto 0; border-radius:2px; }
 
-    /* ABOUT */
     #about { background: var(--dark); }
     .about-grid {
       display:grid; grid-template-columns:1fr 1fr;
@@ -185,7 +181,6 @@
     .info-item span { font-size:.85rem; color:var(--muted); }
     .info-item a { color:var(--accent); text-decoration:none; font-size:.85rem; }
 
-    /* SKILLS */
     #skills { background: var(--darker); }
     .skills-grid {
       display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -212,7 +207,6 @@
       border:1px solid rgba(108,99,255,0.2);
     }
 
-    /* TIMELINE */
     #experience { background:var(--dark); }
     .timeline { max-width:900px; margin:0 auto; position:relative; }
     .timeline::before {
@@ -246,7 +240,7 @@
       color:var(--muted); font-size:.87rem; line-height:1.7;
       margin-bottom:.3rem; padding-left:1rem; position:relative;
     }
-    .tl-points li::before { content:'\25B8'; position:absolute; left:0; color:var(--primary); }
+    .tl-points li::before { content:'▸'; position:absolute; left:0; color:var(--primary); }
     .env-tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:1rem; }
     .env-tag {
       background:rgba(76,201,240,0.08); color:var(--muted);
@@ -254,7 +248,6 @@
       padding:.2rem .6rem; border-radius:12px; font-size:.72rem;
     }
 
-    /* CERTIFICATIONS */
     #certifications { background:var(--darker); }
     .certs-grid {
       display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -279,7 +272,6 @@
     .cert-info h4 { font-size:.9rem; font-weight:700; }
     .cert-info span { font-size:.78rem; color:var(--muted); }
 
-    /* EDUCATION */
     #education { background:var(--dark); }
     .edu-grid {
       display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
@@ -302,7 +294,6 @@
     .edu-card .school { color:var(--accent); font-size:.88rem; margin-bottom:.3rem; }
     .edu-card .year   { color:var(--muted); font-size:.82rem; }
 
-    /* CONTACT */
     #contact { background:var(--darker); }
     .contact-wrapper { max-width:700px; margin:0 auto; text-align:center; }
     .contact-cards { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; margin-top:2rem; }
@@ -317,13 +308,11 @@
     .contact-card i { font-size:1.3rem; color:var(--primary); }
     .contact-card span { font-size:.88rem; font-weight:500; }
 
-    /* FOOTER */
     footer {
       background:var(--darker); border-top:1px solid var(--border);
       text-align:center; padding:2rem; color:var(--muted); font-size:.82rem;
     }
 
-    /* RESPONSIVE */
     @media(max-width:768px) {
       .about-grid { grid-template-columns:1fr; }
       .nav-links { display:none; }
@@ -334,7 +323,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">SP</div>
   <ul class="nav-links">
@@ -345,12 +333,11 @@
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="https://github.com/pokasatyapriya/portfolio/raw/main/SATYA-PRIYA-POKA-1.docx" download class="nav-cta">
+  <a href="SATYA-PRIYA-POKA-1.docx" download class="nav-cta">
     <i class="fas fa-download"></i> Resume
   </a>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -359,7 +346,7 @@
     <div class="hero-badge"><i class="fas fa-robot"></i> &nbsp; AI / ML Engineer</div>
     <h1 class="hero-name">Satya Priya Poka</h1>
     <p class="hero-title">
-      Building <span>Intelligent Systems</span> &middot; Transforming <span>Data into Decisions</span>
+      Building <span>Intelligent Systems</span> · Transforming <span>Data into Decisions</span>
     </p>
     <p class="hero-desc">
       AI/ML Engineer with 4 years of experience deploying production-grade Machine Learning and Deep
@@ -368,7 +355,7 @@
     </p>
     <div class="hero-btns">
       <a href="#experience" class="btn-primary"><i class="fas fa-briefcase"></i> &nbsp; View Experience</a>
-      <a href="https://github.com/pokasatyapriya/portfolio/raw/main/SATYA-PRIYA-POKA-1.docx" download class="btn-outline">
+      <a href="SATYA-PRIYA-POKA-1.docx" download class="btn-outline">
         <i class="fas fa-download"></i> &nbsp; Download Resume
       </a>
     </div>
@@ -381,7 +368,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="section-label">Who I Am</div>
   <h2 class="section-title">About Me</h2>
@@ -394,11 +380,11 @@
       <div class="about-avatar">SP</div>
     </div>
     <div class="about-text">
-      <h3>AI/ML Engineer &amp; Deep Learning Specialist</h3>
+      <h3>AI/ML Engineer & Deep Learning Specialist</h3>
       <p>I design, develop, and deploy scalable Machine Learning and Deep Learning solutions with a
-      strong focus on the full ML lifecycle &mdash; from data preprocessing and feature engineering to
+      strong focus on the full ML lifecycle — from data preprocessing and feature engineering to
       model deployment, monitoring, and MLOps automation.</p>
-      <p>My expertise spans Healthcare predictive analytics and Banking fraud detection, where I&rsquo;ve
+      <p>My expertise spans Healthcare predictive analytics and Banking fraud detection, where I've
       built production-ready AI systems that integrate seamlessly with enterprise platforms on AWS.</p>
       <div class="about-info">
         <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>New York City, NY</span></div>
@@ -410,7 +396,6 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="section-label">What I Know</div>
   <h2 class="section-title">Technical Skills</h2>
@@ -420,7 +405,7 @@
     <div class="skill-card">
       <div class="skill-card-header">
         <div class="skill-icon"><i class="fas fa-code"></i></div>
-        <h3>Programming &amp; Scripting</h3>
+        <h3>Programming & Scripting</h3>
       </div>
       <div class="skill-tags">
         <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">R</span>
@@ -430,7 +415,7 @@
     <div class="skill-card">
       <div class="skill-card-header">
         <div class="skill-icon"><i class="fas fa-brain"></i></div>
-        <h3>Machine Learning &amp; AI</h3>
+        <h3>Machine Learning & AI</h3>
       </div>
       <div class="skill-tags">
         <span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span>
@@ -464,7 +449,7 @@
     <div class="skill-card">
       <div class="skill-card-header">
         <div class="skill-icon"><i class="fab fa-aws"></i></div>
-        <h3>Cloud &amp; MLOps</h3>
+        <h3>Cloud & MLOps</h3>
       </div>
       <div class="skill-tags">
         <span class="tag">AWS EC2</span><span class="tag">S3</span>
@@ -476,7 +461,7 @@
     <div class="skill-card">
       <div class="skill-card-header">
         <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-        <h3>Visualization &amp; Tools</h3>
+        <h3>Visualization & Tools</h3>
       </div>
       <div class="skill-tags">
         <span class="tag">Power BI</span><span class="tag">Tableau</span>
@@ -488,29 +473,30 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-label">My Journey</div>
   <h2 class="section-title">Professional Experience</h2>
   <div class="divider"></div>
   <p class="section-sub">4+ years building production AI systems across healthcare and banking domains.</p>
   <div class="timeline">
-
     <div class="tl-item">
       <div class="tl-dot"><i class="fas fa-heartbeat"></i></div>
       <div class="tl-card">
         <div class="tl-header">
           <span class="tl-role">AI/ML Engineer</span>
-          <span class="tl-date">Jul 2025 &ndash; Present</span>
+          <span class="tl-date">Jul 2025 – Present</span>
         </div>
         <div class="tl-company">Cardinal Health</div>
-        <div class="tl-location"><i class="fas fa-map-marker-alt"></i> New York City, NY &middot; Healthcare Predictive Risk &amp; Claims Analytics</div>
+        <div class="tl-location">
+          <i class="fas fa-map-marker-alt"></i> New York City, NY ·
+          Healthcare Predictive Risk & Claims Analytics
+        </div>
         <ul class="tl-points">
-          <li>Designed predictive ML models using Python, Scikit-learn &amp; XGBoost for claims fraud detection</li>
-          <li>Developed NLP pipelines using Transformers (BERT) &amp; SpaCy for unstructured medical record analysis</li>
-          <li>Built LSTM &amp; Attention deep learning architectures using PyTorch for clinical text classification</li>
+          <li>Designed predictive ML models using Python, Scikit-learn & XGBoost for claims fraud detection</li>
+          <li>Developed NLP pipelines using Transformers (BERT) & SpaCy for unstructured medical record analysis</li>
+          <li>Built LSTM & Attention deep learning architectures using PyTorch for clinical text classification</li>
           <li>Engineered scalable preprocessing pipelines using PySpark, improving model accuracy by 20%</li>
-          <li>Deployed models as FastAPI REST APIs; containerized with Docker &amp; Kubernetes on AWS</li>
+          <li>Deployed models as FastAPI REST APIs; containerized with Docker & Kubernetes on AWS</li>
           <li>Built real-time Kafka streaming pipelines and integrated model tracking with MLflow</li>
         </ul>
         <div class="env-tags">
@@ -522,20 +508,22 @@
         </div>
       </div>
     </div>
-
     <div class="tl-item">
       <div class="tl-dot"><i class="fas fa-university"></i></div>
       <div class="tl-card">
         <div class="tl-header">
           <span class="tl-role">Machine Learning Engineer</span>
-          <span class="tl-date">Oct 2024 &ndash; Jun 2025</span>
+          <span class="tl-date">Oct 2024 – Jun 2025</span>
         </div>
         <div class="tl-company">Wells Fargo</div>
-        <div class="tl-location"><i class="fas fa-map-marker-alt"></i> Atlanta, GA &middot; Banking Fraud Detection &amp; Credit Risk Modeling</div>
+        <div class="tl-location">
+          <i class="fas fa-map-marker-alt"></i> Atlanta, GA ·
+          Banking Fraud Detection & Credit Risk Modeling
+        </div>
         <ul class="tl-points">
-          <li>Built fraud detection models using XGBoost, LightGBM &amp; Scikit-learn classification pipelines</li>
+          <li>Built fraud detection models using XGBoost, LightGBM & Scikit-learn classification pipelines</li>
           <li>Developed anomaly detection using Isolation Forest and Autoencoder architectures</li>
-          <li>Designed FastAPI model inference APIs deployed on AWS EC2 &amp; Lambda for scalable inference</li>
+          <li>Designed FastAPI model inference APIs deployed on AWS EC2 & Lambda for scalable inference</li>
           <li>Conducted SHAP value explainability analysis for regulatory compliance</li>
           <li>Automated model retraining via Jenkins CI/CD; integrated outputs with Power BI dashboards</li>
         </ul>
@@ -547,21 +535,23 @@
         </div>
       </div>
     </div>
-
     <div class="tl-item">
       <div class="tl-dot"><i class="fas fa-cogs"></i></div>
       <div class="tl-card">
         <div class="tl-header">
           <span class="tl-role">Associate AI Engineer</span>
-          <span class="tl-date">Jun 2021 &ndash; Dec 2023</span>
+          <span class="tl-date">Jun 2021 – Dec 2023</span>
         </div>
         <div class="tl-company">CTS (Cognizant Technology Solutions)</div>
-        <div class="tl-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India &middot; Enterprise AI &amp; Forecasting Analytics</div>
+        <div class="tl-location">
+          <i class="fas fa-map-marker-alt"></i> Hyderabad, India ·
+          Enterprise AI & Forecasting Analytics
+        </div>
         <ul class="tl-points">
           <li>Developed supervised ML models using Scikit-learn for business demand forecasting</li>
-          <li>Built NLP classification models using NLTK &amp; BERT for enterprise text analytics</li>
+          <li>Built NLP classification models using NLTK & BERT for enterprise text analytics</li>
           <li>Designed SQL queries in MySQL and assisted in deploying ML APIs via Flask</li>
-          <li>Created Tableau dashboards and assisted in cloud deployments on AWS EC2 &amp; S3</li>
+          <li>Created Tableau dashboards and assisted in cloud deployments on AWS EC2 & S3</li>
           <li>Improved model accuracy through feature scaling, cross-validation and error analysis</li>
         </ul>
         <div class="env-tags">
@@ -572,11 +562,9 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="section-label">Credentials</div>
   <h2 class="section-title">Certifications</h2>
@@ -585,28 +573,42 @@
   <div class="certs-grid">
     <div class="cert-card">
       <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
-      <div class="cert-info"><h4>AWS Certified ML &ndash; Specialty</h4><span>Amazon Web Services</span></div>
+      <div class="cert-info">
+        <h4>AWS Certified ML – Specialty</h4>
+        <span>Amazon Web Services</span>
+      </div>
     </div>
     <div class="cert-card">
-      <div class="cert-icon tf">&#129504;</div>
-      <div class="cert-info"><h4>TensorFlow Developer Certificate</h4><span>Google / TensorFlow</span></div>
+      <div class="cert-icon tf">🧠</div>
+      <div class="cert-info">
+        <h4>TensorFlow Developer Certificate</h4>
+        <span>Google / TensorFlow</span>
+      </div>
     </div>
     <div class="cert-card">
       <div class="cert-icon azure"><i class="fab fa-microsoft"></i></div>
-      <div class="cert-info"><h4>Azure AI Engineer Associate</h4><span>Microsoft Azure</span></div>
+      <div class="cert-info">
+        <h4>Azure AI Engineer Associate</h4>
+        <span>Microsoft Azure</span>
+      </div>
     </div>
     <div class="cert-card">
-      <div class="cert-icon db">&#128310;</div>
-      <div class="cert-info"><h4>Databricks ML Fundamentals</h4><span>Databricks</span></div>
+      <div class="cert-icon db">🔶</div>
+      <div class="cert-info">
+        <h4>Databricks ML Fundamentals</h4>
+        <span>Databricks</span>
+      </div>
     </div>
     <div class="cert-card">
       <div class="cert-icon k8s"><i class="fas fa-dharmachakra"></i></div>
-      <div class="cert-info"><h4>CKAD &ndash; Kubernetes App Developer</h4><span>CNCF / Linux Foundation</span></div>
+      <div class="cert-info">
+        <h4>CKAD – Kubernetes App Developer</h4>
+        <span>CNCF / Linux Foundation</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
   <div class="section-label">Academic Background</div>
   <h2 class="section-title">Education</h2>
@@ -614,27 +616,30 @@
   <p class="section-sub">Solid academic foundation in computer science and information sciences.</p>
   <div class="edu-grid">
     <div class="edu-card">
-      <div class="edu-badge">Master&rsquo;s Degree</div>
-      <h3>M.S. in Computer &amp; Information Sciences</h3>
-      <div class="school"><i class="fas fa-university"></i> The University of Southern Mississippi</div>
+      <div class="edu-badge">Master's Degree</div>
+      <h3>M.S. in Computer & Information Sciences</h3>
+      <div class="school">
+        <i class="fas fa-university"></i> The University of Southern Mississippi
+      </div>
       <div class="year"><i class="fas fa-calendar-alt"></i> Graduated: December 2025</div>
     </div>
     <div class="edu-card">
-      <div class="edu-badge">Bachelor&rsquo;s Degree</div>
+      <div class="edu-badge">Bachelor's Degree</div>
       <h3>B.Tech in Computer Science</h3>
-      <div class="school"><i class="fas fa-university"></i> Vignan&rsquo;s Nirula Institution of Technology &amp; Sciences for Women</div>
+      <div class="school">
+        <i class="fas fa-university"></i> Vignan's Nirula Institution of Technology & Sciences for Women
+      </div>
       <div class="year"><i class="fas fa-calendar-alt"></i> Graduated: May 2023</div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="section-label">Get In Touch</div>
   <h2 class="section-title">Contact Me</h2>
   <div class="divider"></div>
   <div class="contact-wrapper">
-    <p class="section-sub">Open to exciting AI/ML roles and collaborations. Let&rsquo;s connect!</p>
+    <p class="section-sub">Open to exciting AI/ML roles and collaborations. Let's connect!</p>
     <div class="contact-cards">
       <a href="mailto:satyapoka1117@gmail.com" class="contact-card">
         <i class="fas fa-envelope"></i><span>satyapoka1117@gmail.com</span>
@@ -645,20 +650,18 @@
       <a href="https://www.linkedin.com/in/satyapriyapoka/" target="_blank" class="contact-card">
         <i class="fab fa-linkedin"></i><span>LinkedIn Profile</span>
       </a>
-      <a href="https://github.com/pokasatyapriya/portfolio/raw/main/SATYA-PRIYA-POKA-1.docx" download class="contact-card">
+      <a href="SATYA-PRIYA-POKA-1.docx" download class="contact-card">
         <i class="fas fa-file-download"></i><span>Download Resume</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>&copy; 2026 Satya Priya Poka &middot; AI/ML Engineer &middot; Built with &#10084;&#65039; and pure HTML/CSS/JS</p>
+  <p>© 2026 Satya Priya Poka · AI/ML Engineer · Built with ❤️ and pure HTML/CSS/JS</p>
 </footer>
 
 <script>
-  // Floating Particles
   const container = document.getElementById('particles');
   for (let i = 0; i < 25; i++) {
     const p = document.createElement('div');
@@ -672,7 +675,6 @@
     container.appendChild(p);
   }
 
-  // Active Nav Highlight
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
@@ -681,11 +683,12 @@
       if (window.scrollY >= s.offsetTop - 100) current = s.id;
     });
     navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--primary)' : '';
+      a.style.color = a.getAttribute('href') === '#' + current
+        ? 'var(--primary)'
+        : '';
     });
   });
 
-  // Fade-in on Scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -694,7 +697,10 @@
       }
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.skill-card,.tl-card,.cert-card,.edu-card,.contact-card').forEach(el => {
+
+  document.querySelectorAll(
+    '.skill-card, .tl-card, .cert-card, .edu-card, .contact-card'
+  ).forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity .6s ease, transform .6s ease';
